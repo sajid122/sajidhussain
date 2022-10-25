@@ -1,0 +1,213 @@
+
+D:\itwork>d;\
+'d' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\itwork>d:
+
+D:\itwork>itwor..
+'itwor..' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\itwork>itwork..
+'itwork..' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\itwork>cd..
+
+D:\>cd itwork
+
+D:\itwork>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   command.txt
+
+
+D:\itwork>git init
+Reinitialized existing Git repository in D:/itwork/.git/
+
+D:\itwork>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   command.txt
+
+
+D:\itwork>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   command.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   command.txt
+
+
+D:\itwork>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+D:\itwork>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+D:\itwork>git init
+Reinitialized existing Git repository in D:/itwork/.git/
+
+D:\itwork>git add .
+
+D:\itwork>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   command.txt
+
+
+D:\itwork>git commit -m 'new'
+[master (root-commit) 5875cc4] 'new'
+ 1 file changed, 3 insertions(+)
+ create mode 100644 command.txt
+
+D:\itwork>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\itwork>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\itwork>git add itwork
+fatal: pathspec 'itwork' did not match any files
+
+D:\itwork>git add command.txt.txt
+fatal: pathspec 'command.txt.txt' did not match any files
+
+D:\itwork>git command
+git: 'command' is not a git command. See 'git --help'.
+
+D:\itwork>git add command.txt
+
+D:\itwork>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    command.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        command.txt.txt
+
+
+D:\itwork>git add command.txt.txt
+
+D:\itwork>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    command.txt -> command.txt.txt
+
+
+D:\itwork>git -m 'all'
+unknown option: -m
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+D:\itwork>git commit -m 'all'
+[master 4c32aca] 'all'
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename command.txt => command.txt.txt (100%)
+
+D:\itwork>git branch
+* master
+
+D:\itwork>git branch devops
+
+D:\itwork>git branch
+  devops
+* master
+
+D:\itwork>git checkout devops
+Switched to branch 'devops'
+
+D:\itwork>git status
+On branch devops
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   command.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\itwork>git init
+Reinitialized existing Git repository in D:/itwork/.git/
+
+D:\itwork>git add .
+
+D:\itwork>git status
+On branch devops
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   command.txt.txt
+
+
+D:\itwork>git add command.txt.txt
+
+D:\itwork>git commit -m 'new'
+[devops ccd5876] 'new'
+ 1 file changed, 1 insertion(+)
+
+D:\itwork>git checkout master
+Switched to branch 'master'
+
+D:\itwork>git chectout devops
+git: 'chectout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\itwork>git checkout devops
+Switched to branch 'devops'
+
+D:\itwork>git checkout master
+Switched to branch 'master'
+
+D:\itwork>git merge master
+Already up to date.
+
+D:\itwork>git merge master
+Already up to date.
+
+D:\itwork>get merge devops
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\itwork>git merge devops
+Updating 4c32aca..ccd5876
+Fast-forward
+ command.txt.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+D:\itwork>
